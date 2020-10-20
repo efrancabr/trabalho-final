@@ -1,0 +1,14 @@
+<div class="form-group">
+  <label for="select-filter">Ordenar por</label>
+  <select
+    class="form-control"
+    (change)="onFilterChange()"
+    [(ngModel)]="filterType"
+    name="select-filter"
+    id="select-filter"
+  >
+    <option value="">Selecionar...</option>
+    <option value="voteCount">Número de votos</option>
+    <option value="title">Título</option>
+  </select>
+</div>

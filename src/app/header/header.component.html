@@ -1,0 +1,18 @@
+<header class="main-header">
+  <h1>Busca Filmes</h1>
+
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Buscar Filmes</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="moviesFilter"
+        (ngModelChange)="onMoviesFilter($event)"
+        name="moviesFilter"
+        type="text"
+      />
+    </div>
+    <app-filter-box></app-filter-box>
+  </form>
+</header>

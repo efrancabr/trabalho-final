@@ -1,0 +1,15 @@
+<div class="container-fluid" style="text-align:center;">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Número de favoritados: </label>
+      <span></span>
+    </div>
+  </form>
+
+  <div class="row row-cols-3">
+    <app-movie-item
+      *ngFor="let movie of movies | async"
+      [movie]="movie"
+    ></app-movie-item>
+  </div>
+</div>
